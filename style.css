@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.aspalti {
+  height: 100%;
+  width: 100%;
+}
+.luigi {
+  width: 122px;
+  height: 131px;
+  bottom: 132px;
+  left: -61px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+  animation: leftToRight 9s linear infinite;
+}
+.mario {
+  width: 122px;
+  height: 131px;
+  bottom: 0px;
+  left: -61px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+  animation: leftToRight 10s linear infinite;
+}
+.xe {
+  width: 170px;
+  height: 150px;
+  position: absolute;
+  top: 270px;
+  left: 100%;
+  animation: xe 1s linear infinite;
+}
+.mze {
+  width: 262px;
+  height: 243px;
+  position: absolute;
+  top: 34px;
+  right: 385px;
+  animation: rotate 30s linear infinite;
+}
+
+.grubeli {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  object-fit: contain;
+  animation-name: grubeli;
+  animation: grubeli 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes xe {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -221px;
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    left: -61px;
+  }
+
+  to {
+    left: 120%;
+  }
+}
+
+@keyframes grubeli {
+  0% {
+    left: 100%;
+    top: 20px;
+  }
+
+  25% {
+    top: 90px;
+  }
+
+  50% {
+    top: 30px;
+  }
+
+  75% {
+    top: 90px;
+  }
+
+  100% {
+    top: 40px;
+    left: -221px;
+  }
+}
